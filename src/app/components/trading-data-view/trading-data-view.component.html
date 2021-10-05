@@ -1,0 +1,38 @@
+<div class="container" align="center">
+    <p-table [value]="dataList" responsiveLayout="scroll" 
+        (sortFunction)="customSort($event)" [customSort]="true" styleClass="p-datatable-sm">
+        <ng-template pTemplate="header">
+            <tr>
+                <th class="noBorder"></th>
+                <th pSortableColumn="price" class="noBorder rightAlign">Available Cash <p-sortIcon
+                        field="price"></p-sortIcon>
+                </th>
+            </tr>
+            <tr>
+                <th pSortableColumn="name">Account <p-sortIcon field="name"></p-sortIcon>
+                </th>
+                <th class="todaysChangeStyle rightAlign">Today's Change</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-obj>
+            <tr>
+                <td class="nameStyle">{{obj.name}}</td>
+                <td style="text-align: right;" pSortableColumn="price">
+                    <span class="priceStyle">{{obj.price | currency}} </span>
+                    <br />
+                    <span class="changeStyle" [ngClass]="{'greenStyle': obj.changeRatePercent > 0, 
+                       'redStyle' : obj.changeRatePercent < 0,'grayStyle': obj.changeRatePercent ==0  }">
+                        <span *ngIf="obj.changeRatePercent > 0">+</span>
+                        {{obj.changeRatePercent}}% / {{obj.changeRateValue | currency}}
+                    </span>
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="summary">
+
+                <td *ngIf="showLoadMore"><button pButton type="button" label="Load more" class="p-button-text" (click)="loadMore()"></button></td>
+
+        </ng-template>
+    </p-table>
+
+</div>

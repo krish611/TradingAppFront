@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/primeng/resources/primeng.min.css";
+@import "../node_modules/primeicons/primeicons.css";
+body {
+    background-color: #0f8ec7;   
+}
+
+@media (min-width: 1025px) {
+    .container {
+        margin: 4rem;
+        padding-left: 17vw;
+        padding-right: 17vw;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 1rem;
+        padding:0.5rem;
+        width: 85vw;
+    }
+}

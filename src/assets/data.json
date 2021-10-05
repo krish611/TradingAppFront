@@ -1,0 +1,10 @@
+{
+    "data": [
+        {"name": "IRA-5200", "price": 5763.36, "changeRatePercent": -0.08, "changeRateValue": 8916.69},
+        {"name": "AAA-1812", "price": 2010926.10, "changeRatePercent": 0.21,"changeRateValue": 38881.63},
+        {"name": "AAA-3810", "price": 10050054.07, "changeRatePercent": 0.07,"changeRateValue": 8916.69},
+        {"name": "REG-2019", "price": 13456679.34, "changeRatePercent": 0.00,"changeRateValue": 0.00},
+        {"name": "IRA-0146", "price": 15884302.39, "changeRatePercent": 0.03,"changeRateValue": 7430.83},
+        {"name": "AAA-0029", "price": 39160334.24, "changeRatePercent": 0.07,"changeRateValue": 31435.87}
+    ]
+}

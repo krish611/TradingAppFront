@@ -1,0 +1,31 @@
+.greenStyle{
+    color:#34b058;
+}
+.redStyle{
+    color:#ff2233;
+}
+.grayStyle{
+    color:gray;
+}
+.nameStyle{
+    color:#1574b1;
+    font-weight:bold;
+    font-size: 1.1rem !important;
+}
+.priceStyle{
+    font-weight: bold;
+    font-size: 1rem !important;
+}
+.changeStyle{
+    font-weight: bold;
+    font-size:0.8rem !important;
+}
+.todaysChangeStyle{
+    color:#787878;text-align: right;
+}
+.noBorder{
+    border: 0px !important;
+}
+.rightAlign{
+    text-align: right !important;
+}
